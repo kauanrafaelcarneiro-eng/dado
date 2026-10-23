@@ -1,10 +1,9 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
-
+:root {
+    --cor-fundo: #0a0518;
+    --cor-principal: #130b2b;
+    --cor-secundaria: #25164c; 
+    --cor-destaque: #ffd700; /* Dourado */
+    --cor-texto: #e2daff;
 }
 
 body {
@@ -14,30 +13,60 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
 }
 
-.caixa-principal{
+.caixa-principal {
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid var(--cor-secundaria);
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.2);
 }
 
-h1{
+h1 {
     color: var(--cor-destaque);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.caixa-perguntas {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column; /* Coloca os botões um embaixo do outro */
+    gap: 15px;
 }
 
 button {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
-    border: none;
-    border-radius: 15px;
-    padding: 15px;
-    transition: background-color 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left; /* Alinha o texto das opções à esquerda */
 }
 
-button:hover{
+button:hover {
     background-color: var(--cor-destaque);
-    color: var(--cor-principal);
+    color: var(--cor-fundo);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.texto-resultado {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 20px;
 }
