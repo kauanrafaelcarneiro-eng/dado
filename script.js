@@ -6,75 +6,70 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Um artefato antigo e poderoso é encontrado nas fronteiras do seu reino. Ele pertenceu ao antigo Lorde das Trevas. Qual é o seu primeiro comando?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "afirmacao"
+                texto: "Levar o artefato para a torre dos magos para que ele seja estudado e usado na defesa do reino.",
+                afirmacao: "Você escolheu o caminho do conhecimento, preferindo estudar as forças ocultas para usá-las a seu favor."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "afirmacao"
+                texto: "Organizar uma comitiva de guerreiros para levar o artefato até uma montanha vulcânica e destruí-lo imediatamente.",
+                afirmacao: "Você escolheu o caminho da prudência e do sacrifício, sabendo que certos poderes são perigosos demais para existir."
             }           
-            
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre elaIA. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de tecnologia em sala de aula. Qual atitude você toma?",
+        enunciado: "O reino vizinho, habitado por Elfos da Floresta, está sendo atacado por criaturas sombrias. Eles pedem a sua ajuda, mas seu exército está reduzido. O que você faz?",
         alternativas: [
             {
-                texto:"Utilizar uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento",
-                afirmacao:"afirmacao"
+                texto: "Marchar imediatamente para a floresta. Uma aliança de sangue não pode ser quebrada.",
+                afirmacao: "Sua lealdade aos aliados se provou inabalável, marchando para o perigo em nome da honra."
             },
             {
-                texto: "Escrever o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao:"afirmacao"
+                texto: "Manter suas tropas nas muralhas protegendo seu próprio povo. A prioridade é a sobrevivência dos seus.",
+                afirmacao: "Você agiu como um líder estrategista e focado na sobrevivência, priorizando a segurança interna do seu povo."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Uma jovem órfã surge no castelo demonstrando habilidades mágicas descontroladas que assustam os moradores. Como você lida com a situação?",
         alternativas: [
             {
-                texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao:"afirmacao"
+                texto: "Acolher a jovem no castelo e providenciar um mentor para que ela aprenda a dominar sua magia.",
+                afirmacao: "Demonstrou grande empatia e visão de futuro, acolhendo novos talentos e transformando medo em potencial."
             },
             {
-                texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao:"afirmacao"
+                texto: "Exilá-la do reino para garantir que nenhum acidente mágico fira os cidadãos.",
+                afirmacao: "Sua liderança foi rígida e severa, escolhendo afastar ameaças imprevisíveis sem hesitar."
             }
-            
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Durante uma batalha decisiva contra um dragão ancestral, você tem a oportunidade de desferir o golpe final, mas isso destruirá um templo histórico antigo. E agora?",
         alternativas: [
             {
-                texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao:"afirmacao"
+                texto: "Sacrificar o templo. Paredes de pedra podem ser reconstruídas, vidas ceifadas pelo dragão não.",
+                afirmacao: "Ficou claro que você valoriza as vidas presentes acima da história e dos monumentos do passado."
             },
             {
-                texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao:"afirmacao"
+                texto: "Encontrar outra estratégia de combate, mesmo que mais arriscada, para preservar o templo sagrado.",
+                afirmacao: "Você mostrou um respeito quase religioso pelas tradições, arriscando a própria vida para salvar o legado do reino."
             }
-            
         ]
     },
     {
-        enunciado: " Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
+        enunciado: "A guerra acabou. Diante do trono, você deve decidir como o reino será governado de agora em diante. Qual será seu legado?",
         alternativas: [
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao:"afirmacao"
+                texto: "Criar um conselho formado por representantes de todas as raças (humanos, elfos e anões) para governarem juntos.",
+                afirmacao: "No fim, você unificou o mundo de fantasia criando uma era de paz, diplomacia e igualdade entre os povos."
             },
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao:"afirmacao"
+                texto: "Assumir a coroa como o único soberano absoluto, garantindo que suas leis rígidas mantenham a ordem.",
+                afirmacao: "No fim, você se tornou um imperador imponente e solitário, cujo punho de ferro garantiu uma ordem inquebrável por séculos."
             }
-            
-            
         ]
-    },
+    }
 ];
 
 let atual = 0; 
@@ -108,8 +103,8 @@ function respostaSelecionada(opcaoSelecionada){
     mostraPergunta();
 }
 
-function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049...";
+function mostraResultado() {
+    caixaPerguntas.textContent = "As Crônicas do Reino ditam que...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
 }
